@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("http://13.51.201.88:3000/");
+const socket = io.connect("http://13.51.201.88:3000");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -75,7 +75,7 @@ function App() {
     <div style={appStyle}>
       {!showChat ? (
         <div style={joinChatContainerStyle}>
-          <h3 style={headingStyle}>Join aaa Chat</h3>
+          <h3 style={headingStyle}>Join Chat</h3>
           <input
             style={inputStyle}
             type="text"
