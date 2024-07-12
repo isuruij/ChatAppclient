@@ -75,7 +75,7 @@ function App() {
     <div style={appStyle}>
       {!showChat ? (
         <div style={joinChatContainerStyle}>
-          <h3 style={headingStyle}>Join Chat</h3>
+          <h3 style={headingStyle}>Join To Chat</h3>
           <input
             style={inputStyle}
             type="text"
