@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("http://13.51.201.88:3000");
+const socket = io.connect("http://ec2-13-51-201-88.eu-north-1.compute.amazonaws.com:3000");
 
 function App() {
   const [username, setUsername] = useState("");
