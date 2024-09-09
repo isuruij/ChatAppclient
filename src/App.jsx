@@ -98,7 +98,7 @@ function App() {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
-            Join Room
+            Join Room..
           </button>
         </div>
       ) : (
