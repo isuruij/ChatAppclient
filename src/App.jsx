@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("http://13.48.249.97:3000");
+const socket = io.connect("http://16.171.254.88:3000");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -79,7 +79,7 @@ function App() {
           <input
             style={inputStyle}
             type="text"
-            placeholder="Name..."
+            placeholder="Name"
             onChange={(event) => {
               setUsername(event.target.value);
             }}
@@ -87,7 +87,7 @@ function App() {
           <input
             style={inputStyle}
             type="text"
-            placeholder="Room ID..."
+            placeholder="Room ID"
             onChange={(event) => {
               setRoom(event.target.value);
             }}
@@ -98,7 +98,7 @@ function App() {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
-            Join Room..
+            Join Room
           </button>
         </div>
       ) : (
